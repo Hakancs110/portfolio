@@ -48,6 +48,8 @@ export default class Experience
 
     update(){
         this.camera.update()
+        this.world.update(); // World update fonksiyonunu çağırın
+
         this.renderer.update()
     }
     

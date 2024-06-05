@@ -16,13 +16,11 @@ export default class World
             new THREE.BoxGeometry(1, 1, 1),
             new THREE.MeshStandardMaterial()
         )
-        const testMesh2= new THREE.Mesh(
+        this.testMesh2= new THREE.Mesh(
             new THREE.BoxGeometry(1, 1, 1),
             new THREE.MeshStandardMaterial()
         )
 
-        this.scene.add(testMesh)
-        testMesh.translateX(1)
         this.resources = this.experience.resources
         // Wait for resources
 
@@ -31,5 +29,20 @@ export default class World
                 // Setup
                 this.environment = new Environment()
             })
+            this.setCube();
+
+    }
+    setCube() {
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        this.cube = new THREE.Mesh(geometry, material);
+        this.scene.add(this.cube);
+    }
+
+    update()
+    {
+        this.cube.rotation.x += 0.01;
+        this.cube.rotation.y += 0.01;
+            
     }
 }
