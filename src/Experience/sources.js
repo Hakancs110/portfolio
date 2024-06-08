@@ -11,5 +11,10 @@ export default[
             '/textures/environmentMap/pz.jpg',
             '/textures/environmentMap/nz.jpg'
         ]
+    },
+    {
+        name: 'room', // Modelin adı
+        type: 'gltfModel',    // Modelin türü
+        path: '/models/main_deletingvisibleFaces.glb' // Modelin dosya yolu
     }
 ]
