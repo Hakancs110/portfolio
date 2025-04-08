@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/project.css">
+
+    <title>Document</title>
+</head>
+<body> 
+
+  <section class="introContent">
+    <div class="introduction-image-container">
+      <div class="introduction-image">
+          <img class="" src="/grass/Thumbnails/mainThumb.png" alt="">
+      </div>
+      <div class="header">
+          <h2>Grass</h2>
+      </div>
+      <div class="arrowContainer">
+        <img class="arrow" src="/arrow.png" alt="">
+      </div>
+  </div>
+  </section>
+
+
+  <section class="projectDescription">
+    <div class="introduction-text-section">
+      <div class="line"></div>
+      <div class="introduction-text">
+        On Grass, my favorite café isn’t just where I sip coffee—it’s also where I work. So, I figured, why not turn this caffeine-fueled double life into some creative artwork?
+        <br><br>
+           
+        <br><br>
+
+  
+  
+        <a href="./grassProcess.html">
+          <div class="button">
+            <button class="explore-button">Explore the Process</button>
+          </div>
+        </a>
+      
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contentGallery">
+    <div class="contentGalleryHeader">
+      <div class="line"></div>
+      <h2>content gallery</h2>
+    </div>
+    <div class="gallery ">
+    
+      <div class="item third">
+        <img src="/grass/ShowCases/topSofa.png" alt="">
+    
+      </div>
+      <div class="item third">
+        <video width="320" height="240" controls>
+          <source src="/grass/ShowCases/ustKatwithAndOutGrass.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+        </video> 
+      </div>
+      <div class="item third">
+        <img src="/grass/ShowCases/addingMots.png" alt="">
+      </div>
+      <div class="item half">
+        <img src="/grass/ShowCases/BarOutlined.jpg" alt="">
+      </div>
+      <div class="item half">
+        <img src="/grass/ShowCases/addingDeserts.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+<div class="modal-overlay" onclick="closeModal()">
+  <span class="close-btn" onclick="closeModal()">x</span>
+  <img class="modal-img" src="" alt="">
+</div>
+<script>
+
+
+function openModal(img) {
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const modalImg = document.querySelector('.modal-img');
+  
+  modalImg.src = img.src;
+  modalOverlay.style.display = 'flex';
+}
+
+function closeModal() {
+  const modalOverlay = document.querySelector('.modal-overlay');
+  modalOverlay.style.display = 'none';
+}
+</script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

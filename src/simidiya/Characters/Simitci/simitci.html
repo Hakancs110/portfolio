@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/article.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column"></div>
+        <div class="middle-column">
+            <div class="article">
+                <div  class="icerik">
+                    <div id = "konu1" class = "topic">
+                        <div class="headerOfTopic">
+                            <h1>#Planning and Inspirations</h1>
+                        </div>
+                            <p class="pf">
+                                Firstly, I'm not sure if my technical skills are sufficient for this character because I want to create a fully detailed character, from modeling to animation.
+
+                            </p>
+                            <p class="pf">
+                                It's crucial for me to find an instrumentalist that won't stand out too much.
+
+                            </p>
+                            <p class="pf">
+                                The violin-like instrument at the Incesaz concert I attended yesterday seems like the most logical choice. Moving the bow back and forth and hitting the right chords in a small area seems easier and more doable than a guitar. Also, the sitting posture while playing this instrument seemed the most original to me compared to others.
+                             </p>
+                            <p class="pf">
+                                Or maybe placing the music sheet right in front of my hand to obstruct the view might be a better option. Also, this didn't seem like laziness but rather a display of cleverness to me.
+
+                            </p>
+                            <p class="pf">
+                                Violin or stringed instrument
+                            </p>
+                            <p class="pf">
+                                Saxophone with beats
+                            </p>
+                            <p class="pf">
+                                When immersed in music, instead of taking the metro, start dancing
+
+                            </p>
+                            <p class="pf">
+                                A song synchronized with movements
+                            </p>
+                            <p class="pf">
+                                On November 30, 2023, after a day's break, I decided to make the character a saxophonist. I believe it will be more in sync with the energy of the stage. Plus, adjusting this sound for the project will be easier. I'm not sure how to convey what's in my mind about the guitarist on a guitar, but I can easily convey it humming to the saxophonist. If I can't achieve the sound with artificial intelligence, I'm thinking of collaborating with a saxophonist from Fiverr and basing the entire animation on this sound. These are my current thoughts.
+
+                            </p>                                
+
+                       
+                    </div>
+                    <div id = "konu2" class = "topic">
+                        <div class="headerOfTopic">
+                            <h1>#Head Variations</h1>
+
+                            <video width="400" controls>
+                                <source src="/simidiya/Process/Character/Head/headVariations.mp4" type="video/mp4">
+    
+                              Your browser does not support the video tag.
+                              </video>                            
+
+                            
+                        </div>
+                    </div>
+
+                    <div id = "konu3" class = "topic">
+                        <div class="headerOfTopic">
+                            <h1>#Head Retopology</h1>
+                        </div>
+                        <video width="400" controls>
+                            <source src="/simidiya/Process/Character/Head/headRetopology.mp4" type="video/mp4">
+
+                          Your browser does not support the video tag.
+                          </video>    
+                        <p class="pf">
+
+                        </p>
+
+
+                    </div>
+                    <div id = "konu4" class = "topic">
+                        <div class="headerOfTopic">
+                            <h1>#FaceExpressions</h1>
+                        </div>
+                        <video width="400" controls>
+                            <source src="/simidiya/Process/Character/Head/faceExpressions.mp4" type="video/mp4">
+
+                          Your browser does not support the video tag.
+                          </video>  
+
+                    </div>
+                    <div id = "konu5" class = "topic">
+                        <div class="headerOfTopic">
+                            <h1>#Body Sculpt</h1>
+                        </div>
+                        <video width="400" controls>
+                            <source src="/simidiya/Process/Character/Head/bodySculpt.mp4" type="video/mp4">
+
+                          Your browser does not support the video tag.
+                          </video>  
+
+                    </div>
+                    <div id = "konu4" class = "topic">
+                        <div class="headerOfTopic">
+                            <h1>#ClothesSculpt</h1>
+                        </div>
+                        <video width="400" controls>
+                            <source src="/simidiya/Process/Character/Head/clothesSculpt.mp4" type="video/mp4">
+
+                          Your browser does not support the video tag.
+                          </video>  
+
+                    </div>
+                    <div id = "konu4" class = "topic">
+                        <div class="headerOfTopic">
+                            <h1>#Clothes Retopology</h1>
+                        </div>
+                        <video width="400" controls>
+                            <source src="/simidiya/Process/Character/Head/clothesRetopology.mp4" type="video/mp4">
+
+                          Your browser does not support the video tag.
+                          </video>  
+
+                    </div>
+
+ 
+
+                </div>
+        </div>
+        </div>
+
+
+        </div>
+        <div class="right-column">
+            <ul class="konu-listesi">
+                <li><a href="#konu1">Planning and Inspirations</a></li>
+                <li><a href="#konu2">Head Variations</a></li>
+                <li><a href="#konu3">Head Retopology</a></li>
+                <li><a href="#konu3">Face Expressions</a></li>
+                <li><a href="#konu4">Body Sculpt</a></li>
+                <li><a href="#konu5">Clothes Sculpt</a></li>
+                <li><a href="#konu6">Clothes Retopology</a></li>
+              </ul>
+
+
+
+        </div>
+      </div>
+</body>
+<script>
+var foundElementId = "";
+
+function findTopmostElementWithClass(className) {
+  var allElements = document.querySelectorAll('.' + className);
+
+  for (var i = 0; i < allElements.length; i++) {
+    var element = allElements[i];
+    var bounding = element.getBoundingClientRect();
+
+    if (bounding.top >= 0 && bounding.top<30) {
+      foundElementId = element.id;
+      console.log("Ekranın en üstündeki ." + className + " sınıfına sahip elementin ID'si: ", foundElementId);
+
+      // Tüm li elemanlarını seç
+      var allLiElements = document.querySelectorAll('.konu-listesi li a');
+      
+      // Tüm li elemanlarının rengini orijinal renklerine döndür
+      allLiElements.forEach(function(liElement) {
+        if (liElement.getAttribute('href') !== '#' + foundElementId) {
+          liElement.style.backgroundColor = ''; // Diğer elemanların rengini boş bırakarak orijinal renklerine döndür
+        }
+      });
+
+      // Bulunan ID'ye sahip li elemanının rengini değiştirme
+      var liElement = document.querySelector('.konu-listesi li a[href="#' + foundElementId + '"]');
+      if (liElement) {
+        liElement.style.backgroundColor = 'red'; // Örnek olarak rengi kırmızı olarak değiştiriyoruz
+      }
+
+      break;
+    }
+  }
+}
+
+window.addEventListener('scroll', function() {
+  findTopmostElementWithClass('topic');
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+  findTopmostElementWithClass('topic');
+});
+</script>
+
+</html>

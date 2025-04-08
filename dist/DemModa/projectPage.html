@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project.css">
+
+    <title>Document</title>
+</head>
+<body> 
+
+  <section class="introContent">
+    <div class="introduction-image-container">
+      <div class="introduction-image">
+          <img class="" src="https://hakansbucketv2.s3.eu-north-1.amazonaws.com/assets/DemModa/gallery/cover.png" alt="">
+      </div>
+      <div class="header">
+          <h2>Dem Moda</h2>
+      </div>
+      <div class="arrowContainer">
+        <img class="arrow" src="../arrow.png" alt="">
+      </div>
+  </div>
+  </section>
+
+
+  <section class="projectDescription">
+    <div class="introduction-text-section">
+      <div class="line"></div>
+      <div class="introduction-text">
+          A 3D model of the cafe called Dem Moda, where I work as a waiter.
+  
+        <br><br>
+        I worked on the project for about 3 months, and it took over 100 hours to complete. The only software I used was Blender.
+  
+        <br><br>
+        Initially, I envisioned this project as a continuation of a series of portraits I started some time ago, but as I progressed and added more details, I wanted it to become a detailed isometric illustration. It turned out to be a work in the style of the European Side Magazine Office, and I am quite satisfied with the final result.
+  
+        <br><br>
+        As I progressed with the project, maintaining motivation was challenging due to the high level of detail. This was one of the biggest difficulties I faced. From this project, I learned that having a clear plan and determining the level of detail beforehand can be very beneficial when starting a project. This way, I would enter a process where I can foresee the steps ahead. In this project, I kept adding details continuously, not knowing exactly where to stop.
+        <br><br>      <br><br>
+  
+  
+        <a href="./process.html">
+          <div class="button">
+            <button class="explore-button">Explore the Process</button>
+          </div>
+        </a>
+      
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contentGallery">
+    <div class="contentGalleryHeader">
+      <div class="line"></div>
+      <h2>content gallery</h2>
+    </div>
+    <div class="gallery ">
+    
+      <div class="item third">
+        <img class="" src="https://hakansbucketv2.s3.eu-north-1.amazonaws.com/assets/DemModa/gallery/contentGallery/1.png" onclick="openModal(this)">
+    
+      </div>
+      <div class="item third">
+        <img class="" src="https://hakansbucketv2.s3.eu-north-1.amazonaws.com/assets/DemModa/gallery/contentGallery/2.png" onclick="openModal(this)">
+      </div>
+      <div class="item third">
+        <img class="" src="https://hakansbucketv2.s3.eu-north-1.amazonaws.com/assets/DemModa/gallery/contentGallery/3.png" onclick="openModal(this)">
+      </div>
+      <div class="item third">
+        <video src="https://hakansbucketv2.s3.eu-north-1.amazonaws.com/assets/DemModa/gallery/contentGallery/0001-0300.mp4" controls></video>
+      </div>
+    
+      
+    </div>
+  </section>
+
+
+<div class="modal-overlay" onclick="closeModal()">
+  <span class="close-btn" onclick="closeModal()">x</span>
+  <img class="modal-img" src="" alt="">
+</div>
+<script>
+
+
+function openModal(img) {
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const modalImg = document.querySelector('.modal-img');
+  
+  modalImg.src = img.src;
+  modalOverlay.style.display = 'flex';
+}
+
+function closeModal() {
+  const modalOverlay = document.querySelector('.modal-overlay');
+  modalOverlay.style.display = 'none';
+}
+</script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

@@ -1,30 +1,31 @@
 import * as THREE from 'three'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
-
 import EventEmitter from './EventEmitter.js'
 
 export default class Resources extends EventEmitter
 {
     constructor(sources){
         super()
+        console.log("fkljaasdfsafdfasdfsdsd")
+
         this.sources = sources
+
+        console.log(this.sources)
+        console.log("fkljasd")
+
         this.items = {}
         this.toLoad = this.sources.length
         this.loaded = 0
+
         this.setLoaders()
         this.startLoading()
-        console.group(this.loaded)
         
     }
 
     setLoaders(){
         this.loaders = {}
-        const dracoLoader = new DRACOLoader()
-        dracoLoader.setDecoderPath('/draco/')
         this.loaders.gltfLoader = new GLTFLoader()
         this.loaders.textureLoader = new THREE.TextureLoader()
-        this.loaders.gltfLoader.setDRACOLoader(dracoLoader)
         this.loaders.cubeTextureLoader = new THREE.CubeTextureLoader()
     }
 
@@ -35,10 +36,14 @@ export default class Resources extends EventEmitter
          {
              if(source.type === 'gltfModel')
              {
+                console.log("ahhahahah")
+
                  this.loaders.gltfLoader.load(
                      source.path,
                      (file) =>
                      {
+                        console.log("ahhahahah")
+
                          this.sourceLoaded(source,file)
                      }
                  )
@@ -63,7 +68,6 @@ export default class Resources extends EventEmitter
                      }
                  )
              }
-             
          }
      }
 
@@ -71,12 +75,11 @@ export default class Resources extends EventEmitter
      {
         this.items[source.name] = file
         this.loaded++
+
         if(this.loaded === this.toLoad){
-            console.log("sources loaded")
+            console.log("ahhahahah")
 
             this.trigger('ready')
-            console.log(this.loaded)
-
         }
      }
     }

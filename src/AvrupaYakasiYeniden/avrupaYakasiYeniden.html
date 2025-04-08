@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/project.css">
+
+    <title>Document</title>
+</head>
+<body> 
+
+  <section class="introContent">
+    <div class="introduction-image-container">
+      <div class="introduction-image">
+          <img class="" src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/FatosMasa.png" alt="">
+      </div>
+      <div class="header">
+          <h2>Avrupa Yakasi Dergi Ofisi v2</h2>
+      </div>
+      <div class="arrowContainer">
+        <img class="arrow" src="/arrow.png" alt="">
+      </div>
+  </div>
+  </section>
+
+
+  <section class="projectDescription">
+    <div class="introduction-text-section">
+      <div class="line"></div>
+      <div class="introduction-text">
+            The reason I made "Avrupa Yakasi Dergi Ofisi v2" is because Diorama artist Ahmet Gezer and I decided to create a physical copy of this work. Therefore, I reorganized the project and remodeled it from top to bottom.  
+        <br><br>
+            The models are much more stylized in this version.  
+        <br><br>
+            I adopted a subdiv workflow instead of a bevel workflow. This is because it doesn't cause many problems when I want to rescale this project and it contributes to its stylized appearance.  
+        <br><br>
+        <br><br>
+
+  
+  
+        <a href="./avrupaYakasiYenidenProcess.html">
+          <div class="button">
+            <button class="explore-button">Explore the Process</button>
+          </div>
+        </a>
+      
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contentGallery">
+    <div class="contentGalleryHeader">
+      <div class="line"></div>
+      <h2>content gallery</h2>
+    </div>
+    <div class="gallery ">
+    
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/asliMasa.png" alt="">
+    
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/FatosMasa.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/SelinMasa.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/FatosMasa2.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/YaprakMasa.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/Mutfak.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/BurhanOda.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/YonetmenMasasi.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/BGProps.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/background1.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/SoundConsole.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/SpotLights.png" alt="">
+      </div>
+      <div class="item third">
+        <img src="/AvrupaYakasiYeniden/Process/ModelingTexturing/texturing/CloseUps/GreenScreen.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+<div class="modal-overlay" onclick="closeModal()">
+  <span class="close-btn" onclick="closeModal()">x</span>
+  <img class="modal-img" src="" alt="">
+</div>
+<script>
+
+
+function openModal(img) {
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const modalImg = document.querySelector('.modal-img');
+  
+  modalImg.src = img.src;
+  modalOverlay.style.display = 'flex';
+}
+
+function closeModal() {
+  const modalOverlay = document.querySelector('.modal-overlay');
+  modalOverlay.style.display = 'none';
+}
+</script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
